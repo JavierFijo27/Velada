@@ -1,0 +1,273 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+}
+
+/* HERO HEADER */
+.hero {
+    height: 100vh;
+    background: url('Fotos/Fondo.png') center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 4rem;
+    color: gold;
+    text-shadow: 0 0 20px gold;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+}
+
+.overlay button {
+    padding: 15px 30px;
+    border: none;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.overlay button:hover {
+    background: #ffd700;
+    transform: scale(1.1);
+}
+
+/* SECCIÓN COMBATES */
+.combates {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.combates h2 {
+    font-size: 2.5rem;
+    color: gold;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px gold;
+}
+
+/* CONTENEDOR */
+.fights-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* TARJETA */
+.fight {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(145deg, #111, #000);
+    border: 2px solid gold;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(255,215,0,0.4);
+    transition: 0.3s;
+}
+
+.fight:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px gold;
+}
+
+/* PELEADORES */
+.fighter {
+    text-align: center;
+}
+
+.fighter img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid gold;
+    box-shadow: 0 0 15px gold;
+}
+
+.fighter h3 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #ffd700;
+}
+
+/* BANDERAS */
+.flag {
+    display: block;
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* VS */
+.vs {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: gold;
+    color: black;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px gold;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    color: #aaa;
+}
+
+/* =========================
+   📲 TABLET (768px+)
+========================= */
+@media (min-width: 768px) {
+
+    /* HEADER */
+    .hero {
+        height: 80vh;
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+    }
+
+    .overlay p {
+        font-size: 1.2rem;
+    }
+
+    .overlay button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    /* COMBATES */
+    .combates {
+        padding: 50px 20px;
+    }
+
+    .combates h2 {
+        font-size: 2.2rem;
+    }
+
+    /* COMBATE EN FILA */
+    .fight {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        padding: 25px;
+    }
+
+    /* IMÁGENES MÁS GRANDES */
+    .fighter img {
+        width: 170px;
+        height: 230px;
+    }
+
+    .fighter h3 {
+        font-size: 1.2rem;
+    }
+
+    .flag {
+        font-size: 1rem;
+    }
+
+    /* VS */
+    .vs {
+        font-size: 2rem;
+        border-radius: 50%;
+        padding: 12px 16px;
+    }
+}
+
+
+/* =========================
+   💻 PC (1024px+)
+========================= */
+@media (min-width: 1024px) {
+
+    /* HEADER MÁS IMPACTANTE */
+    .hero {
+        height: 100vh;
+    }
+
+    .overlay h1 {
+        font-size: 4rem;
+        letter-spacing: 3px;
+    }
+
+    .overlay p {
+        font-size: 1.4rem;
+    }
+
+    /* CONTENIDO MÁS CENTRADO */
+    .fight {
+        width: 70%;
+        max-width: 1000px;
+        padding: 35px;
+    }
+
+    /* IMÁGENES GRANDES TIPO CARTEL */
+    .fighter img {
+        width: 220px;
+        height: 280px;
+    }
+
+    .fighter h3 {
+        font-size: 1.4rem;
+    }
+
+    /* VS MÁS ÉPICO */
+    .vs {
+        font-size: 2.5rem;
+        padding: 15px 20px;
+        box-shadow: 0 0 20px gold;
+    }
+}
+
+
+/* =========================
+   🖥️ PANTALLAS GRANDES (1400px+)
+========================= */
+@media (min-width: 1400px) {
+
+    .fight {
+        width: 60%;
+    }
+
+    .overlay h1 {
+        font-size: 5rem;
+    }
+
+    .fighter img {
+        width: 250px;
+        height: 320px;
+    }
+}
+
